@@ -18,6 +18,42 @@ AXIOM treats cognitive support as an *access* need. The software is built to hel
 - **Offline‑First** — works without network connectivity; can export sharable “aid cards”/QR bundles when back online.
 
 ---
+# AXIOM — ADA‑Protected Evolving Intelligence (Public Core)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Built with ChatGPT](https://img.shields.io/badge/Built%20with-ChatGPT-ff69b4?logo=openai)](https://openai.com)
+[![ADA Shield](https://img.shields.io/badge/ADA%20Compliant-Title%20II%20%2F%20III-green)](#)
+[![Donate via Ko-Fi](https://img.shields.io/badge/Donate-Ko--Fi-orange?logo=kofi)](https://ko-fi.com/yourusername)
+
+---
+
+AXIOM is a **neuro‑symbolic cognitive prosthetic** designed to operate as an **ADA‑aligned assistive system** (Title II/III) with **offline‑first** operation, a sealed **local vault**, and **clear legal interaction hooks** for real‑world use (schools, code enforcement, housing, and general access). This repository provides the **public core**: minimal, runnable modules and documentation that demonstrate the architecture, safety model, and compliance surfaces without exposing private research bundles.
+
+> **Disclaimer**: AXIOM is assistive technology and developer tooling. It is not medical or legal advice. Use at your own risk and consult qualified counsel where required.
+
+---
+
+## Why “ADA‑Protected”?
+
+AXIOM treats cognitive support as an *access* need. The software is built to help users **request accommodations**, **log interactions**, and **preserve evidence** in ways that map to disability law workflows (e.g., ADA Title II/III, Section 504). Concretely, that means:
+
+- **Accommodation Hooks** — first‑class methods to request accommodations and log denials with timestamps.
+- **Evidence Vault** — encrypted local storage for notes, audio/text logs, and artifacts under user control.
+- **De‑Escalation Scripts** — on‑device prompts for school, police/code‑enforcement, transit, and housing staff.
+- **Offline‑First** — works without network connectivity; can export sharable “aid cards”/QR bundles when back online.
+
+---
+
+## Core Capabilities (Public Modules)
+
+- **Neuro‑Symbolic Grid (SLCA)** — a minimal Spatial Leaky Competing Accumulator grid for symbolic decisions.
+- **Compliance Layer (ADA Shield)** — APIs to request accommodations, log responses, and export evidence.
+- **Navigator & Notes** — quick actions for route/find‑help and cognitive notes tied to evidence vault.
+- **QR Bootstrap** — optional QR “beacons” that load a read‑only aid card and rights summary on other devices.
+
+---
+
+## System Architecture (Public View)
 
 ## Core Capabilities (Public Modules)
 
