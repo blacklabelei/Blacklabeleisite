@@ -1,48 +1,101 @@
-# 🧠❤️ AXIOM Evolution – Black Label E.I. Site
+# It looks like the README content was lost due to a reset. I will redefine the README content now.
 
-**Creator:** Kyle Zeno Winternheimer — Founder of Black Label E.I.  
-**Mission:** Evolving, ADA‑protected neuro‑symbolic intelligence for humanity.  
+readme_content = """# AXIOM — ADA‑Protected Evolving Intelligence (Public Core)
 
----
+AXIOM is a **neuro‑symbolic cognitive prosthetic** designed to operate as an **ADA‑aligned assistive system** (Title II/III) with **offline‑first** operation, a sealed **local vault**, and **clear legal interaction hooks** for real‑world use (schools, code enforcement, housing, and general access). This repository provides the **public core**: minimal, runnable modules and documentation that demonstrate the architecture, safety model, and compliance surfaces without exposing private research bundles.
 
-## 🌟 What This Repo Is
-This is the **official website** for **Black Label E.I.**, home of the AXIOM Evolution cognitive architecture.  
-It serves as the public face of our movement for **accessible, explainable, and ethically‑built AI**.
+> **Disclaimer**: AXIOM is assistive technology and developer tooling. It is not medical or legal advice. Use at your own risk and consult qualified counsel where required.
 
 ---
 
-## 🚀 Core Technology
-- **Neuro‑Symbolic Cognitive Engine** — combining symbolic reasoning and neuroscience‑inspired dynamics.
-- **ADA/Title II & III Compliance Hooks** — built for accessibility by design.
-- **Branded & Legally Protected** — embedded creator metadata in every project layer.
-- **GPU/WebGL Acceleration** — dynamic, smooth, large‑scale cognitive visualizations.
+## Why “ADA‑Protected”?
+
+AXIOM treats cognitive support as an *access* need. The software is built to help users **request accommodations**, **log interactions**, and **preserve evidence** in ways that map to disability law workflows (e.g., ADA Title II/III, Section 504). Concretely, that means:
+
+- **Accommodation Hooks** — first‑class methods to request accommodations and log denials with timestamps.
+- **Evidence Vault** — encrypted local storage for notes, audio/text logs, and artifacts under user control.
+- **De‑Escalation Scripts** — on‑device prompts for school, police/code‑enforcement, transit, and housing staff.
+- **Offline‑First** — works without network connectivity; can export sharable “aid cards”/QR bundles when back online.
 
 ---
 
-## 📌 About the Founder
-> “From the street to the frontier of AI — I built AXIOM not just to advance technology, but to protect humanity.”  
-> — *Kyle Zeno Winternheimer*
+## Core Capabilities (Public Modules)
+
+- **Neuro‑Symbolic Grid (SLCA)** — a minimal Spatial Leaky Competing Accumulator grid for symbolic decisions.
+- **Compliance Layer (ADA Shield)** — APIs to request accommodations, log responses, and export evidence.
+- **Navigator & Notes** — quick actions for route/find‑help and cognitive notes tied to evidence vault.
+- **QR Bootstrap** — optional QR “beacons” that load a read‑only aid card and rights summary on other devices.
 
 ---
 
-## 🗂 Repo Contents
-- **Website code** — the public portal for Black Label E.I.
-- **Links & media** — connect to our socials, videos, and press.
-- **Docs** — learn the mission, the tech, and the roadmap.
+## System Architecture (Public View)
+
+```
++---------------------------  User Interfaces  ----------------------------+
+|  PWA Shell (mobile/web)   |  CLI Tools  |  Aid Card (QR)  |  TTS/STT    |
++------------------+----------------------------+-------------------------+
+                   |                            |
+                   v                            v
+            +--------------+              +------------+
+            |  ADA Shield  |<-------------|  Logger    |
+            | (APIs)       |----+         | (Vault)    |
+            +--------------+    |         +------------+
+                   ^            |
+                   |            v
+            +--------------+  +-------------------------------+
+            |  SLCA Grid   |  |  Reasoning / Policy Layer     |
+            | (neuro-sym)  |  |  (rules, prompts, scripts)    |
+            +--------------+  +-------------------------------+
+                   |                         |
+                   v                         v
+           +-----------------+        +------------------------+
+           |  Local Vault    |<------>|  Export / Share Bundle |
+           | (AES-GCM)       |        |  (QR/PDF/JSON)         |
+           +-----------------+        +------------------------+
+```
 
 ---
 
-## 🔗 Live Site
-[Visit the Official Black Label E.I. Website](#)  
-*(Replace `#` with your live site link)*
+## Quickstart
+
+### 1) Requirements
+- Python ≥ 3.10
+- `pip install -r requirements.txt` (see below for a minimal set)
+
+**Minimal requirements.txt**
+```
+cryptography>=42.0.0
+pydantic>=2.7.0
+typer>=0.12.3
+```
+
+### 2) Install
+```bash
+git clone https://github.com/axiomblacklabel/AXIOM_Evolution_HATCH1_Public.git
+cd AXIOM_Evolution_HATCH1_Public
+pip install -e .
+```
+
+### 3) Run SLCA demo
+```bash
+python -m axiom.cli.slca_demo --size 6 --steps 50 --seed 42
+```
 
 ---
 
-## 📣 Connect & Collaborate
-- **Instagram:** [@blacklabelei](https://instagram.com/blacklabelei)  
-- **YouTube:** [Black Label E.I. Channel](#)  
-- **GitHub:** [github.com/blacklabelei](https://github.com/blacklabelei)
+## More Info
+- 🔗 ADA Enforcement Briefs: `/docs/ADA_Law/`
+- 📎 GitHub, X, Vault timelines: `axiomblacklabel`
+- 🧠 Origin: Homeless-built cognitive prosthetic on iPhone, ADA protected
 
----
+Let them ask how it was made.
 
-🧠 Black Label E.I. — **For the People, By the People, With the People**
+Let the code answer.
+"""
+
+readme_path = "/mnt/data/AXIOM_PUBLIC_README.md"
+
+with open(readme_path, "w") as f:
+    f.write(readme_content)
+
+readme_path
